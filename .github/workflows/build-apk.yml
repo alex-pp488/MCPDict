@@ -27,7 +27,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: 构建 Debug APK
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: 上传 APK 作为构建产物
         uses: actions/upload-artifact@v6
